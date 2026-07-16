@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דרך הלב - הודעות</title>
+    <link rel="stylesheet" href="../lib/fontawesome/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../style/main (2).css">
+    <link rel="stylesheet" href="../style/style_masseges.css">
+    <link rel="stylesheet" href="../style/popup.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="up-header">
+            <div>
+                <img class="logo" src="../img/Untitled-1.png" alt="logo">
+            </div>
+            <p id="exp">הסעות לבתי חולים</p>
+            <p id="title">בכל דרך, תמיד איתך :)</p>
+
+            <div id="icons">
+                <div class="col1">
+                    <div class="colIcon">
+
+                        <img class="sign" src="../gif/system-regular-47-chat.gif" alt="">
+
+                    </div>
+                    <a href="../home.html#contact">צור קשר</a>
+                </div>
+                <div class="col1">
+                    <div class="colIcon">
+                        <i class="fa-solid fa-link"></i>
+
+                    </div>
+                    <a>שתף</a>
+                </div>
+
+                <div class="col1">
+                    <div class="colIcon">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                    <a id="out">התנתק</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav>
+            <div class="col2">
+                <i class="fa-solid fa-home"></i>
+                <a class="links-home" id="homePage" href="./UserHome.html">דף הבית</a>
+            </div>
+
+
+            <div class="col2">
+                <i class="fa-solid fa-user-pen"></i>
+                <a class="links-home" href="./updateDetails (2).html">עדכון פרופיל</a>
+            </div>
+            <div class="col2">
+                <i class="fa-solid fa-car"></i>
+                <a class="links-home" href="./myTravelers (2).html">הנסיעות שלי</a>
+            </div>
+            <div class="col2">
+                <i class="fa-solid fa-envelope"></i> <a class="links-home" href="./messages_refined.html">הודעות</a>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+
+        <aside class="sidebar">
+
+            <button class="mail act">
+                <span><i class="fa-solid fa-envelope"></i>הכל</span>
+                <span class="badge">2</span>
+            </button>
+            <button class="mail ">
+                <span><i class="fa-solid fa-circle-arrow-left"></i>דואר נכנס</span>
+                <span class="badge">5</span>
+            </button>
+            <button class="mail">
+                <span><i class="fa-solid fa-paper-plane"></i>דואר יוצא </span>
+            </button>
+
+        </aside>
+        <div id="chat">
+            <div class="chat-header">
+                <div class="user-profile">
+                    <div class="user-avatar">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <div class="user-info">
+                        <h3 id="person_name">אברהם כהן</h3>
+                        <p id="type"><i class="fa-solid fa-circle" style="font-size: 8px; color: #2ecc71;"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-details-bar">
+                <div class="detail-item">תאריך: <span id="date">12/10/23</span></div>
+                <div class="detail-item">שעה: <span id="hour">09:00</span></div>
+            </div>
+            <div class="chat-container">
+
+
+                <div class="chat-messages">
+                    <div class="message sent">
+                        בוקר טוב אברהם, תודה רבה על העזרה. נתראה מחר.
+                        <div class="message-meta">
+                            <span>07:45</span>
+                            <span class="ticks"><i class="fa-solid fa-check-double"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="message received">
+                        בשמחה רבה. אהיה מחוץ לביתך ב-08:45. רפואה שלמה!
+                        <div class="message-meta">
+                            <span>08:45</span>
+                            <span class="ticks" style="color: #4a5568;"><i class="fa-solid fa-check-double"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="message sent">
+                        בוקר טוב אברהם, תודה רבה על העזרה. נתראה. מחר.
+                        <div class="message-meta">
+                            <span>06:28</span>
+                            <span class="ticks"><i class="fa-solid fa-check-double"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-area">
+                    <div class="input-container">
+                        <div class="input-actions">
+                            <i class="fa-solid fa-paperclip" title="צרף קובץ"></i>
+                            <i class="fa-regular fa-image" title="תמונה"></i>
+                            <i class="fa-regular fa-face-smile" title="אימוג'י"></i>
+                        </div>
+                        <input type="text" placeholder="הקלדת הודעה...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>© 2026 שירות הסעות לבתי חולים | מגיעים בבטחה ובשקט נפשי</p>
+            <div class="footer-links">
+                <a href="../home.html#questions">שאלות נפוצות</a>
+                <a href="../home.html#contact">צור קשר</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../scripts/data (2).js"></script>
+<script src="../scripts/ls (2).js"></script>
+<script src="../scripts/js.js"></script>
+
+<script src="../scripts/masseges (2).js"></script>
+
+</html>

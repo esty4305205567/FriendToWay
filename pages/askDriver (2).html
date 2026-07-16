@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>חיפוש נהג</title>
+
+    <link rel="stylesheet" href="../lib/fontawesome/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../style/main (2).css">
+    <link rel="stylesheet" href="../style/popup.css">
+    <link rel="stylesheet" href="../style/askDriver (2).css">
+
+</head>
+
+<body>
+
+    <header>
+
+
+        <div id="up-header">
+            <div>
+                <img class="logo" src="../img/Untitled-1.png" alt="logo">
+            </div>
+            <p id="title">תמיד איתך בכל דרך :)</p>
+            <div id="icons">
+                <div class="col1">
+                    <div class="colIcon">
+
+                        <img class="sign" src="../gif/system-regular-47-chat.gif" alt="">
+
+                    </div>
+                    <a href="../home.html#contact">צור קשר</a>
+                </div>
+                <div class="col1">
+                    <div class="colIcon">
+                        <i class="fa-solid fa-link"></i>
+
+                    </div>
+                    <a>שתף</a>
+                </div>
+           
+                 <div class="col1">
+                    <div class="colIcon">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                    <a id="out">התנתק</a>
+                </div>
+            </div>
+        </div>
+
+
+
+       <nav>
+            <div class="col2">
+                <i class="fa-solid fa-home"></i>
+                <a class="links-home" id="homePage" href="../home.html">דף הבית</a>
+            </div>
+
+
+            <div class="col2">
+                <i class="fa-solid fa-user-pen"></i>
+                <a class="links-home" href="./updateDetails (2).html">עדכון פרופיל</a>
+            </div>
+            <div class="col2">
+                <i class="fa-solid fa-car"></i>
+                <a class="links-home" href="./myTravelers (2).html">הנסיעות שלי</a>
+            </div>
+            <div class="col2">
+                <i class="fa-solid fa-envelope"></i> <a class="links-home" href="./messages_refined.html">הודעות</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <h2 style="color: #0c2340; text-align: center; margin-bottom: 30px;">
+            <i class="fa-solid fa-car" style="color: #f28f79;"></i> הזמנת נהג מותאמת אישית
+        </h2>
+        <form>
+
+            <label for="name">שם</label>
+            <input name="name" required id="name" type="text">
+            <label for="phone">טלפון</label>
+            <input required name="phone" id="phone" type="text">
+            <label for="city">בחר עיר מוצא</label>
+            <select required name="city" id="city">
+
+            </select>
+         
+            <input type="text" id="search" name="to" placeholder="חיפוש יעד" required>
+            <div id="hospitals">
+                <div class="hospital">
+                    <h5>מעיני הישועה</h5>
+                </div>
+                <div class="hospital">
+                    <h5>אסותא</h5>
+                </div>
+                <div class="hospital">
+                    <h5>שיבא</h5>
+                </div>
+                <div class="hospital">
+                    <h5>הדסה הר הצופים</h5>
+                </div>
+                <div class="hospital">
+                    <h5>זיו</h5>
+                </div>
+                <div class="hospital">
+                    <h5>רמב"ם</h5>
+                </div>
+                <div class="hospital">
+                    <h5>סורוקה</h5>
+                </div>
+                <div class="hospital">
+                    <h5>ברזילי</h5>
+
+                </div>
+                <div class="hospital">
+                    <h5>יוספטל</h5>
+                </div>
+                <div class="hospital">
+                    <h5>העמק</h5>
+                </div>
+                <div class="hospital">
+                    <h5>לניאדו</h5>
+                </div>
+                <div class="hospital">
+                    <h5>וולפסון</h5>
+                </div>
+                <div class="hospital">
+                    <h5>הדסה עין כרם</h5>
+                </div>
+                <div class="hospital">
+                    <h5>בלניסון</h5>
+                </div>
+                <div class="hospital">
+                    <h5>השרון</h5>
+                </div>
+                <div id="other">
+                    <h5>לבית חולים אחר</h5>
+                </div>
+            </div>
+            <div id="noFound" style="display: none;">
+
+            </div>
+            <label for="date"> תאריך ושעה</label>
+            <input required id="date" type="datetime-local" placeholder="בחר תאריך ושעה">
+
+            <label for="numPeople">כמה אנשים</label>
+            <input required id="numPeople" type="number" name="numPeople" min="1" max="10" placeholder="1">
+            <label for="information" class="required" >הודעה לנהג</label>
+
+
+            <textarea id="information" name="information" maxlength="500" required></textarea>
+
+            <label for="packageSize">גודל חבילה</label>
+            <select required name="packageSize" id="packageSize">
+                <option value="קטן">קטן</option>
+                <option value="גדול">גדול</option>
+            </select>
+            <label for="gender">מין</label>
+            <select required name="gender" id="gender">
+                <option value="זכר">זכר</option>
+                <option value="נקבה">נקבה</option>
+            </select>
+            <button id="searchDriver">חפש נהג</button>
+        </form>
+    </main>
+
+
+
+ <footer class="site-footer">
+        <div class="footer-content">
+            <p>© 2026 שירות הסעות לבתי חולים | מגיעים בבטחה ובשקט נפשי</p>
+            <div class="footer-links">
+                <a href="../home.html#questions">שאלות נפוצות</a>
+                <a href="../home.html#contact">צור קשר</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/data (2).js"></script>
+    <script src="../scripts/ls (2).js"></script>
+    <script src="../scripts/js.js"></script>
+    <script src="../scripts/askDriver (2).js"></script>
+</body>
+
+</html>

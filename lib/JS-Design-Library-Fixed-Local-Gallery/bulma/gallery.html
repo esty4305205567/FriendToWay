@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulma - גלריה</title>
+  <link rel="stylesheet" href="../libs/bulma/bulma.min.css">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Bulma - גלריית רכיבים</h1>
+    <p>Bulma היא ספריית CSS בלבד, ולכן כל התנהגות דינמית נעשית ב־JavaScript של הפרויקט.</p>
+  </header>
+  <nav class="site-nav">
+    <a href="../index.html">ראשי</a>
+    <a href="#buttons">כפתורים</a>
+    <a href="#box">כרטיס</a>
+    <a href="#columns">עמודות</a>
+    <a href="#form">טופס</a>
+    <a href="#login">התחברות</a>
+    <a href="#message">Message</a>
+    <a href="#table">טבלה</a>
+    <a href="#tabs">טאבים</a>
+    <a href="#panel">Panel</a>
+  </nav>
+  <main>
+    <section class="panel" id="buttons">
+      <h2>כפתורים</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <button class="button is-primary demo-button">ראשי</button>
+          <button class="button is-success demo-button success">שמירה</button>
+          <button class="button is-warning demo-button secondary">עריכה</button>
+          <button class="button is-danger demo-button danger">מחיקה</button>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bulma-buttons">העתק קוד</button>
+      <pre id="bulma-buttons"><code>&lt;button class=&quot;button is-primary&quot;&gt;ראשי&lt;/button&gt;
+&lt;button class=&quot;button is-success&quot;&gt;שמירה&lt;/button&gt;
+&lt;button class=&quot;button is-warning&quot;&gt;עריכה&lt;/button&gt;
+&lt;button class=&quot;button is-danger&quot;&gt;מחיקה&lt;/button&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="box">
+      <h2>Box / Card</h2>
+      <div class="grid">
+        <div class="component-preview"><div class="box demo-card"><h3 class="title is-4">שם פריט</h3><p>תיאור קצר.</p><span class="tag is-success">פעיל</span></div></div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bulma-box">העתק קוד</button>
+      <pre id="bulma-box"><code>&lt;div class=&quot;box&quot;&gt;
+  &lt;h3 class=&quot;title is-4&quot;&gt;שם פריט&lt;/h3&gt;
+  &lt;p&gt;תיאור קצר.&lt;/p&gt;
+  &lt;span class=&quot;tag is-success&quot;&gt;פעיל&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="columns">
+      <h2>עמודות</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <div class="columns">
+            <div class="column"><div class="box demo-card">כרטיס 1</div></div>
+            <div class="column"><div class="box demo-card">כרטיס 2</div></div>
+            <div class="column"><div class="box demo-card">כרטיס 3</div></div>
+          </div>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bulma-columns">העתק קוד</button>
+      <pre id="bulma-columns"><code>&lt;div class=&quot;columns&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;div class=&quot;box&quot;&gt;כרטיס 1&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;div class=&quot;box&quot;&gt;כרטיס 2&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;div class=&quot;box&quot;&gt;כרטיס 3&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="form">
+      <h2>טופס</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <div class="field"><label class="label">שם מלא</label><div class="control"><input class="input" placeholder="הכניסי שם"></div></div>
+          <div class="field"><label class="label">קטגוריה</label><div class="control"><div class="select"><select><option>רגיל</option><option>מיוחד</option></select></div></div></div>
+          <button class="button is-success demo-button success">שמירה</button>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bulma-form">העתק קוד</button>
+      <pre id="bulma-form"><code>&lt;div class=&quot;field&quot;&gt;
+  &lt;label class=&quot;label&quot;&gt;שם מלא&lt;/label&gt;
+  &lt;div class=&quot;control&quot;&gt;
+    &lt;input class=&quot;input&quot; placeholder=&quot;הכניסי שם&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;field&quot;&gt;
+  &lt;label class=&quot;label&quot;&gt;קטגוריה&lt;/label&gt;
+  &lt;div class=&quot;control&quot;&gt;
+    &lt;div class=&quot;select&quot;&gt;
+      &lt;select&gt;
+        &lt;option&gt;רגיל&lt;/option&gt;
+        &lt;option&gt;מיוחד&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;button class=&quot;button is-success&quot;&gt;שמירה&lt;/button&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="login">
+      <h2>מסך התחברות</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <div class="box demo-card" style="max-width: 360px;">
+            <h3 class="title is-4">כניסה למערכת</h3>
+            <input class="input mb-2" placeholder="שם משתמש">
+            <input class="input mb-3" type="password" placeholder="סיסמה">
+            <button class="button is-primary is-fullwidth demo-button">כניסה</button>
+          </div>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bulma-login">העתק קוד</button>
+      <pre id="bulma-login"><code>&lt;div class=&quot;box&quot; style=&quot;max-width: 360px;&quot;&gt;
+  &lt;h3 class=&quot;title is-4&quot;&gt;כניסה למערכת&lt;/h3&gt;
+  &lt;input class=&quot;input mb-2&quot; placeholder=&quot;שם משתמש&quot;&gt;
+  &lt;input class=&quot;input mb-3&quot; type=&quot;password&quot; placeholder=&quot;סיסמה&quot;&gt;
+  &lt;button class=&quot;button is-primary is-fullwidth&quot;&gt;כניסה&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="message">
+      <h2>Message / Notification</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <div class="notification is-success note">הפעולה בוצעה בהצלחה.</div>
+          <article class="message is-info demo-card"><div class="message-header">מידע</div><div class="message-body">כאן מופיעה הודעה מפורטת.</div></article>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bulma-message">העתק קוד</button>
+      <pre id="bulma-message"><code>&lt;div class=&quot;notification is-success&quot;&gt;הפעולה בוצעה בהצלחה.&lt;/div&gt;
+
+&lt;article class=&quot;message is-info&quot;&gt;
+  &lt;div class=&quot;message-header&quot;&gt;מידע&lt;/div&gt;
+  &lt;div class=&quot;message-body&quot;&gt;כאן מופיעה הודעה מפורטת.&lt;/div&gt;
+&lt;/article&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="table">
+      <h2>טבלה</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <table class="table is-bordered is-striped is-fullwidth">
+            <thead><tr><th>שם</th><th>סטטוס</th><th>פעולות</th></tr></thead>
+            <tbody><tr><td>פריט 1</td><td>פעיל</td><td><button class="button is-small is-primary demo-button">עריכה</button></td></tr></tbody>
+          </table>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bulma-table">העתק קוד</button>
+      <pre id="bulma-table"><code>&lt;table class=&quot;table is-bordered is-striped is-fullwidth&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;שם&lt;/th&gt;
+      &lt;th&gt;סטטוס&lt;/th&gt;
+      &lt;th&gt;פעולות&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;פריט 1&lt;/td&gt;
+      &lt;td&gt;פעיל&lt;/td&gt;
+      &lt;td&gt;&lt;button class=&quot;button is-small is-primary&quot;&gt;עריכה&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="tabs">
+      <h2>טאבים</h2>
+      <div class="grid">
+        <div class="component-preview"><div class="tabs"><ul><li class="is-active"><a>כללי</a></li><li><a>פרטים</a></li><li><a>היסטוריה</a></li></ul></div></div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bulma-tabs">העתק קוד</button>
+      <pre id="bulma-tabs"><code>&lt;div class=&quot;tabs&quot;&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;is-active&quot;&gt;&lt;a&gt;כללי&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;פרטים&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;היסטוריה&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="panel">
+      <h2>Panel List</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <nav class="panel demo-card">
+            <p class="panel-heading">רשימת משימות</p>
+            <a class="panel-block is-active">משימה פתוחה</a>
+            <a class="panel-block">משימה שהושלמה</a>
+          </nav>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bulma-panel">העתק קוד</button>
+      <pre id="bulma-panel"><code>&lt;nav class=&quot;panel&quot;&gt;
+  &lt;p class=&quot;panel-heading&quot;&gt;רשימת משימות&lt;/p&gt;
+  &lt;a class=&quot;panel-block is-active&quot;&gt;משימה פתוחה&lt;/a&gt;
+  &lt;a class=&quot;panel-block&quot;&gt;משימה שהושלמה&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+  </main>
+  <script src="../assets/site.js"></script>
+</body>
+</html>

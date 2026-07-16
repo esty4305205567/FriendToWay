@@ -1,0 +1,603 @@
+/* מיכל הצאט הראשי */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    width: 100%;
+    height: 100vh; 
+}
+
+
+
+
+
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    width: 100%;
+}
+
+
+
+.chat-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 0;
+    padding-right: 25px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.chat-input-wrapper {
+    display: flex;
+    align-items: center;
+  
+    border-radius: 25px;
+    padding: 5px 15px;
+    margin-top: 15px;
+}
+
+.chat-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.attach-btn {
+    right: 0;
+    color: #999;
+}
+
+.attach-btn {
+    position: absolute;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+}
+
+.chat-input-wrapper input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+}
+
+.chat-input-wrapper input {
+    width: 100%;
+    padding: 12px 45px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    background: #f8fafc;
+}
+
+.chat-input-wrapper input {
+    width: 100%;
+    padding: 12px 45px;
+    border-radius: 25px;
+    border: 1px solid #e2e8f0;
+    background: #f8fafc;
+    font-size: 14px;
+    outline: none;
+}
+
+.send-btn-icon {
+    color: var(--blue);
+}
+
+.icon-btn,
+.send-btn-icon {
+    background: none;
+    border: none;
+    color: #a0aec0;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.send-btn-icon {
+    position: absolute;
+    left: 15px;
+    background: none;
+    border: none;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+input,
+textarea,
+option {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--pink);
+}
+
+main {
+    display: flex;
+
+    gap: 20px;
+    padding: 20px;
+   
+    height: calc(100vh - 50px);
+  
+}
+
+.sidebar {
+   
+    background-color: #faf9f6;
+    
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #e2e8f0;
+    position: sticky;
+    top: 70px;
+}
+
+.sidebar button {
+    text-align: right;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #0c2340;
+   
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.sidebar button:hover {
+    background-color: #f28f79;
+    /* אפרסק ממותג */
+    color: white;
+}
+
+.chat-container {
+    flex-grow: 1;
+   
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    overflow-y: auto;
+   
+}
+
+
+.sidebar button::before {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 16px;
+
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+
+    color: #0c2340;
+    transition: color 0.3s ease;
+}
+
+.sidebar button:hover::before {
+    color: #f28f79;
+}
+
+
+
+.sidebar button:nth-child(1)::before {
+    content: "\f015";
+}
+
+/* בית */
+.sidebar button:nth-child(2)::before {
+    content: "\f007";
+}
+
+/* משתמש */
+.sidebar button:nth-child(3)::before {
+    content: "\f075";
+}
+
+/* הודעות/צ'אט */
+.sidebar button:nth-child(4)::before {
+    content: "\f013";
+}
+
+/* הגדרות */
+
+/* שיפור מראה הכפתור עצמו */
+.sidebar button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* יישור לימין */
+    gap: 10px;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #0c2340;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: rgba(242, 143, 121, 0.1);
+    /* רקע אפרסק שקוף ב-Hover */
+}
+
+/* הגדרת האייקונים - מותאם אישית לתוכן הכפתורים */
+
+/* כפתור "הכל" - בועת צ'אט כללית */
+.sidebar button:nth-child(1)::before {
+    content: "\f086";
+}
+
+/* כפתור "דואר נכנס" - חץ למטה (קבלת הודעות) */
+.sidebar button:nth-child(2)::before {
+    content: "\f019";
+}
+
+/* כפתור "דואר יוצא" - חץ למעלה (שליחת הודעות) */
+.sidebar button:nth-child(3)::before {
+    content: "\f093";
+}
+
+/* הגדרות בסיס לאייקונים בתוך ה-sidebar */
+.sidebar button::before {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 18px;
+    display: inline-block;
+    width: 35px;
+    text-align: center;
+    color: #0c2340;
+    transition: color 0.2s;
+}
+
+/* 1. כפתור "הכל" (All) - סימון של תיבת מייל או רשימה כוללת */
+.sidebar button:nth-child(1)::before {
+    content: "\f0e0";
+}
+
+/* Envelope - מעטפה */
+
+/* 2. כפתור "דואר נכנס" (Inbox) - חץ נכנס לקופסה */
+.sidebar button:nth-child(2)::before {
+    content: "\f01c";
+}
+
+/* Inbox - תיבת דואר */
+
+/* 3. כפתור "דואר יוצא" (Outbox) - חץ יוצא מהקופסה */
+.sidebar button:nth-child(3)::before {
+    content: "\f093";
+}
+
+/* Upload/Out - חץ יוצא */
+/* הגדרת האייקונים - בחירה סמנטית (משמעותית) */
+
+/* 1. הכל - בועות שיחה */
+.sidebar button:nth-child(1)::before {
+    content: "\f086";
+}
+
+/* 2. דואר נכנס - תיבת דואר עם חץ פנימה */
+.sidebar button:nth-child(2)::before {
+    content: "\f01c";
+}
+
+/* 3. דואר יוצא - שליחה/נייר טיסה */
+.sidebar button:nth-child(3)::before {
+    content: "\f1d8";
+}
+
+/* שיפור ויזואלי להצמדת האייקון לטקסט */
+.sidebar button::before {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 18px;
+    display: inline-block;
+    width: 35px;
+    text-align: center;
+    color: #0c2340;
+    transition: all 0.3s ease;
+}
+
+/* שדרוג ה-Hover: האייקון לא רק משנה צבע אלא גם "קופץ" קצת ימינה */
+.sidebar button:hover::before {
+    color: #f28f79;
+    transform: translateX(5px);
+}
+
+.sidebar button:nth-child(2)::before {
+    content: "\f2b6";
+}
+
+.sidebar button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* מרווח נושם */
+    /* padding: 15px; */
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+/* הוספת רקע עדין מאוד לאייקונים כדי שהם ייראו "בתוך עיגול" */
+.sidebar button::before {
+    /* background-color: #faf9f6; */
+
+    padding: 8px;
+    border-radius: 50%;
+    /* הופך את האייקון לעיגול */
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0c2340;
+}
+
+.sidebar button:nth-child(1)::before {
+    content: "\f0ca";
+}
+
+.sidebar button:nth-child(2)::before {
+    content: "\f07c";
+}
+
+/* דואר נכנס - סימול פעולת כניסה (Arrow Down to Bracket) */
+.sidebar button:nth-child(2)::before {
+    content: "\f753";
+}
+
+.sidebar button:nth-child(2)::before {
+    content: "\f27a";
+}
+
+/* האייקון של חץ מעוגל שפונה שמאלה - משדר כניסה למרחב */
+.sidebar button:nth-child(2)::before {
+    content: "\f0a8";
+}
+
+/* הגדרת הסט המאוזן */
+.sidebar button:nth-child(1)::before {
+    content: "\f022";
+    /* זה האייקון של ה-List Check */
+}
+
+/* רשימה */
+.sidebar button:nth-child(2)::before {
+    content: "\f0a8";
+}
+
+/* חץ נכנס (שמאלה) */
+.sidebar button::before {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    /* פינות מעוגלות קלות לתיבה */
+    /* background-color: #f8f5f2;/* רקע בהיר מאוד לאייקוןצבע הרקע שלך */
+
+    color: #0c2340;
+    transition: all 0.3s ease;
+}
+
+.sidebar {
+    /* padding: 24px; */
+    background: #fff;
+}
+
+/* עיצוב כפתור - גובה נדיב וריווח חכם */
+
+
+/* אפקט דריכה עדין - רק שינוי קל בצבע */
+.sidebar button:hover {
+    background-color: #f1f5f9;
+    color: #0f172a;
+}
+
+/* אייקונים - סגנון דק (Line Style) */
+
+
+.sidebar button:hover::before {
+    color: #0f172a;
+}
+
+/* 1. מבנה כללי: הצבת התפריט והצ'אט זה לצד זה */
+main {
+    display: flex;
+    height: 100vh;
+    /* margin-bottom: 20px; */
+}
+
+/* 2. התפריט הצדדי - נשאר נקי */
+.sidebar {
+    /* width: 250px; */
+    background-color: #ffffff;
+    z-index: 10;
+    /* נוודא שאין לו רקע עם לוגו */
+    background-image: none;
+}
+
+/* 3. אזור הצ'אט - כאן נשים את הרקע */
+.chat-container {
+    flex: 1;
+    /* תופס את כל שאר המקום */
+    position: relative;
+    /* כדי שה-::before ימוקם יחסית אליו בלבד */
+    background-color: #f5f5f5;
+    /* צבע רקע בסיסי */
+}
+
+/* 4. רקע הלוגואים - מוצמד רק ל-chat-container */
+.chat-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/תמונה.png');
+    background-size: 120px;
+    background-repeat: repeat;
+    opacity: 0.07;
+    z-index: 0;
+    pointer-events: none;
+    /* קריטי - מונע מהלוגואים לחסום לחיצות */
+}
+
+/* וודאי שהמכל הראשי תופס את כל המסך */
+main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    /* margin: 0; */
+    overflow: hidden;
+    /* margin-bottom: 20px; */
+    /* מונע גלילה מיותרת */
+}
+
+/* הצ'אט חייב לתפוס את כל הגובה והרוחב הפנוי */
+.chat-container {
+    flex: 1;
+    position: relative;
+    background-color: #f0f2f5;
+    /* צבע רקע ניטרלי */
+    overflow-y: auto;
+    /* מאפשר גלילה רק בתוך הצ'אט */
+}
+
+/* התיקון הקריטי לרקע */
+.chat-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* כאן השינוי: שימוש ב-cover או בגודל אריח שמתאים בדיוק */
+    background-image: url('../img/תמונה.png');
+    background-size: 200px;
+    /* תתחילי מ-200px ותשחקי עם זה עד שזה ייראה נכון */
+    background-repeat: repeat;
+    
+    opacity: 0.1;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+
+/* וודאי שהמכל הראשי תופס את כל המסך */
+main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    /* margin: 0; */
+    overflow: hidden;
+    /* margin-bottom: 40px; */
+    /* מונע גלילה מיותרת */
+}
+
+/* הצ'אט חייב לתפוס את כל הגובה והרוחב הפנוי */
+.chat-container {
+    flex: 1;
+    position: relative;
+    background-color: #f0f2f5;
+    /* צבע רקע ניטרלי */
+    overflow-y: auto;
+    /* מאפשר גלילה רק בתוך הצ'אט */
+}
+
+/* התיקון הקריטי לרקע */
+.chat-container::before {
+    content: "";
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(245, 245, 245, 0.256); /* שכבה חצי שקופה מעל הרקע */
+    pointer-events: none;
+    z-index: 0;
+    /* background-size: cover */
+    
+    background: rgba(245, 245, 245, 0.324); 
+    
+    /* הופך את השכבה הזו לבלתי נגישה למגע (כדי שאפשר יהיה ללחוץ על הודעות) */
+    pointer-events: none;
+    z-index: 1;
+}
+.chat-container {
+    margin-bottom: 20px;
+    flex: 1; /* תופס אוטומטית את כל השטח הפנוי, לא משנה מה גודל התפריט */
+    position: relative;
+    overflow-y: auto; /* הגלילה מתבצעת כאן */
+    
+    /* כאן הקסם: מגדירים את הרקע ישירות על המכל */
+    /* background-image: url('../img/תמונה.png'); */
+    background-size: 150px;
+    background-repeat: repeat;
+    
+    /* מונע מהרקע לזוז יחד עם התוכן בגלילה */
+    background-attachment: local; 
+    
+    background-color: #f5f5f557;
+}
+.chat-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* background-image: url('image_345af6.png'); התמונה שלך */
+    background-size: 150px;
+    background-repeat: repeat;
+    
+    /* כאן קורה הקסם: */
+    
+    /* 1. opacity: הופך את כל התמונה לחצי שקופה */
+    opacity: 0.1; 
+    
+    /* 2. filter: נותן לנו שליטה נוספת על הדהייה */
+    /* grayscale(50%) - הופך את הצבעים ליותר "אפורים/עדינים" */
+    /* brightness(1.2) - מבהיר את התמונה כדי שהיא תיבלע ברקע */
+    filter: grayscale(50%) brightness(1.2);
+    
+    z-index: 0;
+    pointer-events: none;
+}
+/* מוודא שההודעות יושבות מעל הרקע ולא חותכות אותו */
+
+/* 3. הטריק האמיתי: נוסיף צבע רקע ל-container שיהיה טיפה אטום */
+/* .chat-container {
+    position: relative;
+    background-color: #f5f5f5; /* צבע הבסיס */
+ 
+.sidebar .act{
+    background-color: #0c23406f
+    /* opacity: 0.5; */
+}

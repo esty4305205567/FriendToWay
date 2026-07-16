@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>כל Bootstrap Icons - דף מקומי</title>
+
+  <!-- כאן צריך להיות קובץ Bootstrap Icons המקומי -->
+  <link rel="stylesheet" href="../libs/bootstrap-icons/bootstrap-icons.css">
+
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #d9dee8;
+      --accent: #1d4ed8;
+      --accent-soft: #eef4ff;
+      --code: #0f172a;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    header {
+      padding: 30px 22px;
+      background: linear-gradient(135deg, #172554, #2563eb);
+      color: white;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0;
+      max-width: 980px;
+      opacity: .94;
+    }
+
+    main {
+      width: min(1240px, calc(100% - 28px));
+      margin: 24px auto 60px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 18px 0;
+      box-shadow: 0 10px 26px rgba(15, 23, 42, .06);
+    }
+
+    .top-grid {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr .45fr;
+      gap: 12px;
+      align-items: end;
+      margin-top: 14px;
+    }
+
+    @media (max-width: 850px) {
+      .top-grid { grid-template-columns: 1fr; }
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+    }
+
+    input,
+    select {
+      width: 100%;
+      margin-top: 6px;
+      padding: 11px 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 1rem;
+      background: #fff;
+    }
+
+    .counter {
+      background: var(--accent-soft);
+      border: 1px solid #c7d7fe;
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .message {
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin: 12px 0;
+    }
+
+    .message.ok {
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+    }
+
+    .message.warn {
+      background: #fff7ed;
+      border: 1px solid #fdba74;
+    }
+
+    .hidden { display: none !important; }
+
+    .ltr {
+      direction: ltr;
+      text-align: left;
+      display: inline-block;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .icon-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, .05);
+    }
+
+    .icon-card .bi {
+      display: block;
+      font-size: 2.1rem;
+      margin-bottom: 8px;
+      color: var(--accent);
+      min-height: 42px;
+    }
+
+    .icon-name {
+      direction: ltr;
+      text-align: center;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .88rem;
+      min-height: 36px;
+      overflow-wrap: anywhere;
+    }
+
+    .actions {
+      display: grid;
+      gap: 7px;
+      margin-top: 12px;
+    }
+
+    .copy-btn {
+      border: 0;
+      border-radius: 9px;
+      padding: 7px 9px;
+      cursor: pointer;
+      background: #e0e7ff;
+      color: #1e3a8a;
+      font-weight: 700;
+    }
+
+    .copy-btn:hover { background: #c7d2fe; }
+
+    .copy-btn.secondary {
+      background: #f1f5f9;
+      color: #334155;
+    }
+
+    .copy-btn.secondary:hover { background: #e2e8f0; }
+
+    .guide-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .guide-table th,
+    .guide-table td {
+      border: 1px solid var(--border);
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    .guide-table th {
+      background: #eef2ff;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>כל Bootstrap Icons במקום אחד</h1>
+    <p>דף מקומי לחיפוש, בדיקה והעתקת אייקונים לפרויקט JavaScript בלי אינטרנט בזמן העבודה.</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>לפני שמתחילים</h2>
+      <p>
+        הדף קורא את שמות האייקונים מתוך הקובץ המקומי:
+        <span class="ltr">libs/bootstrap-icons/bootstrap-icons.css</span>
+      </p>
+
+      <div id="loadedMessage" class="message ok hidden">
+        האייקונים נטענו בהצלחה. אפשר לחפש ולהעתיק קוד.
+      </div>
+
+      <div id="missingCssMessage" class="message warn hidden">
+        לא נמצאו כל האייקונים. צריך להכניס את הקובץ:
+        <br>
+        <span class="ltr">libs/bootstrap-icons/bootstrap-icons.css</span>
+        <br>
+        וגם את תיקיית הפונטים:
+        <span class="ltr">libs/bootstrap-icons/fonts</span>
+      </div>
+
+      <div class="top-grid">
+        <label>
+          חיפוש אייקון לפי שם
+          <input id="searchInput" type="search" placeholder="לדוגמה: house, person, trash, arrow, calendar">
+        </label>
+
+        <label>
+          סינון מהיר
+          <select id="quickFilter">
+            <option value="">הכול</option>
+            <option value="arrow">חיצים</option>
+            <option value="person,user,people">משתמשים/אנשים</option>
+            <option value="file,folder,document">קבצים ותיקיות</option>
+            <option value="calendar,clock,alarm">זמן ותאריכים</option>
+            <option value="cart,bag,basket,cash,credit,wallet">קניות/כסף</option>
+            <option value="check,x,exclamation,info,question">סטטוסים</option>
+            <option value="image,camera,film,music,play,pause">מדיה</option>
+            <option value="phone,chat,envelope,mail">תקשורת</option>
+            <option value="gear,tools,wrench,sliders">הגדרות וכלים</option>
+            <option value="circle,square,triangle">צורות</option>
+          </select>
+        </label>
+
+        <div class="counter">
+          מוצגים: <span id="shownCount">0</span>
+          <br>
+          סה״כ: <span id="totalCount">0</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>מה אפשר להעתיק?</h2>
+      <table class="guide-table">
+        <thead>
+          <tr>
+            <th>אפשרות</th>
+            <th>מתי משתמשים?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>העתק class</td>
+            <td>כשכבר יש תגית קיימת ורוצים רק להחליף לה את שם האייקון.</td>
+          </tr>
+          <tr>
+            <td>העתק i</td>
+            <td>השימוש הכי נפוץ: מדביקים את תגית האייקון בתוך כפתור, כותרת, טבלה או כרטיס.</td>
+          </tr>
+          <tr>
+            <td>העתק כפתור</td>
+            <td>כשרוצים כפתור מוכן עם אייקון וטקסט.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <h2>גלריית האייקונים</h2>
+      <div id="iconsGrid" class="icon-grid"></div>
+    </section>
+  </main>
+
+  <script>
+    const fallbackIconNames = [
+      "house", "house-fill", "person", "person-fill", "people", "people-fill",
+      "search", "plus-circle", "pencil", "trash", "check-circle", "x-circle",
+      "exclamation-triangle", "info-circle", "question-circle", "calendar",
+      "clock", "envelope", "telephone", "chat", "gear", "tools",
+      "arrow-left", "arrow-right", "arrow-up", "arrow-down", "box-arrow-right",
+      "file-earmark", "folder", "image", "camera", "cart", "bag", "wallet"
+    ];
+
+    const grid = document.querySelector("#iconsGrid");
+    const searchInput = document.querySelector("#searchInput");
+    const quickFilter = document.querySelector("#quickFilter");
+    const totalCount = document.querySelector("#totalCount");
+    const shownCount = document.querySelector("#shownCount");
+    const missingCssMessage = document.querySelector("#missingCssMessage");
+    const loadedMessage = document.querySelector("#loadedMessage");
+
+    let allIconNames = [];
+
+    function getRules(sheet) {
+      try {
+        return Array.from(sheet.cssRules || []);
+      } catch {
+        return [];
+      }
+    }
+
+    function collectSelectors(rules, target) {
+      for (const rule of rules) {
+        if (rule.cssRules) {
+          collectSelectors(Array.from(rule.cssRules), target);
+        } else if (rule.selectorText) {
+          target.push(rule.selectorText);
+        }
+      }
+    }
+
+    function extractBootstrapIconNames() {
+      const selectors = [];
+
+      for (const sheet of Array.from(document.styleSheets)) {
+        const href = sheet.href || "";
+        const ownerHref = sheet.ownerNode?.getAttribute?.("href") || "";
+
+        if (!href.includes("bootstrap-icons") && !ownerHref.includes("bootstrap-icons")) {
+          continue;
+        }
+
+        collectSelectors(getRules(sheet), selectors);
+      }
+
+      const names = new Set();
+
+      for (const selector of selectors) {
+        const matches = selector.matchAll(/\.bi-([a-z0-9][a-z0-9-]*)::before/g);
+        for (const match of matches) {
+          names.add(match[1]);
+        }
+      }
+
+      return Array.from(names).sort((a, b) => a.localeCompare(b));
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;");
+    }
+
+    function matchesFilter(name, text, filter) {
+      const cleanText = text.trim().toLowerCase();
+      const cleanFilter = filter.trim().toLowerCase();
+
+      if (cleanText && !name.includes(cleanText)) return false;
+
+      if (cleanFilter) {
+        const words = cleanFilter.split(",").map(x => x.trim()).filter(Boolean);
+        return words.some(word => name.includes(word));
+      }
+
+      return true;
+    }
+
+    function createCard(name) {
+      const className = `bi bi-${name}`;
+      const iCode = `<i class="${className}"></i>`;
+      const buttonCode = `<button><i class="${className}"></i> פעולה</button>`;
+
+      const card = document.createElement("article");
+      card.className = "icon-card";
+      card.dataset.name = name;
+
+      card.innerHTML = `
+        <i class="${className}" aria-hidden="true"></i>
+        <div class="icon-name">bi-${name}</div>
+        <div class="actions">
+          <button class="copy-btn" data-copy-text="${escapeHtml(className)}">העתק class</button>
+          <button class="copy-btn secondary" data-copy-text="${escapeHtml(iCode)}">העתק i</button>
+          <button class="copy-btn secondary" data-copy-text="${escapeHtml(buttonCode)}">העתק כפתור</button>
+        </div>
+      `;
+
+      return card;
+    }
+
+    function render() {
+      const text = searchInput.value.toLowerCase();
+      const filter = quickFilter.value.toLowerCase();
+
+      const filtered = allIconNames.filter(name => matchesFilter(name, text, filter));
+
+      grid.innerHTML = "";
+      const fragment = document.createDocumentFragment();
+
+      for (const name of filtered) {
+        fragment.appendChild(createCard(name));
+      }
+
+      grid.appendChild(fragment);
+      shownCount.textContent = filtered.length;
+      totalCount.textContent = allIconNames.length;
+    }
+
+    async function copyText(text, button) {
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch {
+        const temp = document.createElement("textarea");
+        temp.value = text;
+        document.body.appendChild(temp);
+        temp.select();
+        document.execCommand("copy");
+        temp.remove();
+      }
+
+      const old = button.textContent;
+      button.textContent = "הועתק";
+      setTimeout(() => button.textContent = old, 1100);
+    }
+
+    document.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-copy-text]");
+      if (!button) return;
+
+      const text = button.getAttribute("data-copy-text");
+      copyText(text, button);
+    });
+
+    searchInput.addEventListener("input", render);
+    quickFilter.addEventListener("change", render);
+
+    window.addEventListener("load", () => {
+      allIconNames = extractBootstrapIconNames();
+
+      if (allIconNames.length === 0) {
+        missingCssMessage.classList.remove("hidden");
+        allIconNames = fallbackIconNames;
+      } else {
+        loadedMessage.classList.remove("hidden");
+      }
+
+      render();
+    });
+  </script>
+</body>
+</html>

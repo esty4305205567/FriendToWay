@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap - גלריה</title>
+  <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Bootstrap - גלריית רכיבים</h1>
+    <p>רכיבים נפוצים לפרויקט JS. אם Bootstrap עדיין לא הוכנס לתיקיית libs, חלק מהעיצוב הרשמי לא יופיע.</p>
+  </header>
+  <nav class="site-nav">
+    <a href="../index.html">ראשי</a>
+    <a href="#buttons">כפתורים</a>
+    <a href="#cards">כרטיסים</a>
+    <a href="#dashboard">דשבורד</a>
+    <a href="#forms">טפסים</a>
+    <a href="#login">התחברות</a>
+    <a href="#table">טבלה</a>
+    <a href="#alerts">הודעות</a>
+    <a href="#tabs">טאבים</a>
+    <a href="#accordion">אקורדיון</a>
+    <a href="#modal">Modal</a>
+  </nav>
+  <main>
+    <section class="panel" id="buttons">
+      <h2>כפתורים</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <button class="btn btn-primary demo-button">ראשי</button>
+          <button class="btn btn-success demo-button success">שמירה</button>
+          <button class="btn btn-warning demo-button secondary">עריכה</button>
+          <button class="btn btn-danger demo-button danger">מחיקה</button>
+          <button class="btn btn-outline-primary">משני</button>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bs-buttons">העתק קוד</button>
+      <pre id="bs-buttons"><code>&lt;button class=&quot;btn btn-primary&quot;&gt;ראשי&lt;/button&gt;
+&lt;button class=&quot;btn btn-success&quot;&gt;שמירה&lt;/button&gt;
+&lt;button class=&quot;btn btn-warning&quot;&gt;עריכה&lt;/button&gt;
+&lt;button class=&quot;btn btn-danger&quot;&gt;מחיקה&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-primary&quot;&gt;משני&lt;/button&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="cards">
+      <h2>כרטיסים</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <div class="card shadow-sm demo-card">
+            <div class="card-body">
+              <h3 class="card-title">שם פריט</h3>
+              <p class="card-text">תיאור קצר של הפריט.</p>
+              <span class="badge text-bg-success">פעיל</span>
+              <button class="btn btn-primary demo-button">צפייה</button>
+            </div>
+          </div>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bs-card">העתק קוד</button>
+      <pre id="bs-card"><code>&lt;div class=&quot;card shadow-sm&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h3 class=&quot;card-title&quot;&gt;שם פריט&lt;/h3&gt;
+    &lt;p class=&quot;card-text&quot;&gt;תיאור קצר של הפריט.&lt;/p&gt;
+    &lt;span class=&quot;badge text-bg-success&quot;&gt;פעיל&lt;/span&gt;
+    &lt;button class=&quot;btn btn-primary&quot;&gt;צפייה&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="dashboard">
+      <h2>דשבורד כרטיסים</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <div class="row g-3">
+            <div class="col"><div class="card demo-card"><div class="card-body"><h4>משתמשים</h4><p class="fs-3">24</p></div></div></div>
+            <div class="col"><div class="card demo-card"><div class="card-body"><h4>משימות</h4><p class="fs-3">8</p></div></div></div>
+            <div class="col"><div class="card demo-card"><div class="card-body"><h4>ממתין</h4><p class="fs-3">3</p></div></div></div>
+          </div>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bs-dashboard">העתק קוד</button>
+      <pre id="bs-dashboard"><code>&lt;div class=&quot;row g-3&quot;&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h4&gt;משתמשים&lt;/h4&gt;
+        &lt;p class=&quot;fs-3&quot;&gt;24&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h4&gt;משימות&lt;/h4&gt;
+        &lt;p class=&quot;fs-3&quot;&gt;8&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="forms">
+      <h2>טופס רגיל</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">שם מלא</label>
+              <input class="form-control" type="text" placeholder="הכניסי שם">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">קטגוריה</label>
+              <select class="form-select"><option>רגיל</option><option>מיוחד</option></select>
+            </div>
+            <button type="button" class="btn btn-success demo-button success">שמירה</button>
+          </form>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bs-form">העתק קוד</button>
+      <pre id="bs-form"><code>&lt;form&gt;
+  &lt;div class=&quot;mb-3&quot;&gt;
+    &lt;label class=&quot;form-label&quot;&gt;שם מלא&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;הכניסי שם&quot;&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;mb-3&quot;&gt;
+    &lt;label class=&quot;form-label&quot;&gt;קטגוריה&lt;/label&gt;
+    &lt;select class=&quot;form-select&quot;&gt;
+      &lt;option&gt;רגיל&lt;/option&gt;
+      &lt;option&gt;מיוחד&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+
+  &lt;button type=&quot;submit&quot; class=&quot;btn btn-success&quot;&gt;שמירה&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="login">
+      <h2>מסך התחברות קטן</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <div class="card demo-card" style="max-width: 360px;">
+            <div class="card-body">
+              <h3>כניסה למערכת</h3>
+              <input class="form-control mb-2" placeholder="שם משתמש">
+              <input class="form-control mb-3" type="password" placeholder="סיסמה">
+              <button class="btn btn-primary w-100 demo-button">כניסה</button>
+            </div>
+          </div>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bs-login">העתק קוד</button>
+      <pre id="bs-login"><code>&lt;div class=&quot;card&quot; style=&quot;max-width: 360px;&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h3&gt;כניסה למערכת&lt;/h3&gt;
+    &lt;input class=&quot;form-control mb-2&quot; placeholder=&quot;שם משתמש&quot;&gt;
+    &lt;input class=&quot;form-control mb-3&quot; type=&quot;password&quot; placeholder=&quot;סיסמה&quot;&gt;
+    &lt;button class=&quot;btn btn-primary w-100&quot;&gt;כניסה&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="table">
+      <h2>טבלה עם פעולות</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <table class="table table-bordered table-striped">
+            <thead><tr><th>שם</th><th>סטטוס</th><th>פעולות</th></tr></thead>
+            <tbody>
+              <tr><td>פריט 1</td><td>פעיל</td><td><button class="btn btn-sm btn-primary demo-button">עריכה</button></td></tr>
+              <tr><td>פריט 2</td><td>ממתין</td><td><button class="btn btn-sm btn-danger demo-button danger">מחיקה</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bs-table">העתק קוד</button>
+      <pre id="bs-table"><code>&lt;table class=&quot;table table-bordered table-striped&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;שם&lt;/th&gt;
+      &lt;th&gt;סטטוס&lt;/th&gt;
+      &lt;th&gt;פעולות&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;פריט 1&lt;/td&gt;
+      &lt;td&gt;פעיל&lt;/td&gt;
+      &lt;td&gt;&lt;button class=&quot;btn btn-sm btn-primary&quot;&gt;עריכה&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="alerts">
+      <h2>הודעות</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <div class="alert alert-success note">הפעולה בוצעה בהצלחה.</div>
+          <div class="alert alert-danger warn">אירעה שגיאה.</div>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bs-alerts">העתק קוד</button>
+      <pre id="bs-alerts"><code>&lt;div class=&quot;alert alert-success&quot;&gt;הפעולה בוצעה בהצלחה.&lt;/div&gt;
+&lt;div class=&quot;alert alert-danger&quot;&gt;אירעה שגיאה.&lt;/div&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="tabs">
+      <h2>טאבים</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link active" href="#">כללי</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">פרטים</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">היסטוריה</a></li>
+          </ul>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bs-tabs">העתק קוד</button>
+      <pre id="bs-tabs"><code>&lt;ul class=&quot;nav nav-tabs&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;כללי&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;פרטים&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;היסטוריה&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="accordion">
+      <h2>אקורדיון פשוט</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <details open><summary>פרטים ראשיים</summary><p>מידע פתוח.</p></details>
+          <details><summary>פרטים נוספים</summary><p>מידע נוסף.</p></details>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bs-accordion-simple">העתק קוד</button>
+      <pre id="bs-accordion-simple"><code>&lt;details open&gt;
+  &lt;summary&gt;פרטים ראשיים&lt;/summary&gt;
+  &lt;p&gt;מידע פתוח.&lt;/p&gt;
+&lt;/details&gt;
+
+&lt;details&gt;
+  &lt;summary&gt;פרטים נוספים&lt;/summary&gt;
+  &lt;p&gt;מידע נוסף.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="modal">
+      <h2>Modal Bootstrap</h2>
+      <p>הדוגמה הזאת נפתחת רק בלחיצה, לא לבד.</p>
+      <div class="grid">
+        <div class="component-preview">
+          <button type="button" class="btn btn-primary demo-button" data-bs-toggle="modal" data-bs-target="#bsExampleModal">פתיחת חלון</button>
+          <div class="modal fade" id="bsExampleModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title fs-5">אישור פעולה</h3>
+                  <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="סגירה"></button>
+                </div>
+                <div class="modal-body">האם להמשיך?</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ביטול</button>
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">אישור</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#bs-modal">העתק קוד</button>
+      <pre id="bs-modal"><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#bsExampleModal&quot;&gt;
+  פתיחת חלון
+&lt;/button&gt;
+
+&lt;div class=&quot;modal fade&quot; id=&quot;bsExampleModal&quot; tabindex=&quot;-1&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;h3 class=&quot;modal-title fs-5&quot;&gt;אישור פעולה&lt;/h3&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn-close ms-0&quot; data-bs-dismiss=&quot;modal&quot;&gt;&lt;/button&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;modal-body&quot;&gt;האם להמשיך?&lt;/div&gt;
+
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-dismiss=&quot;modal&quot;&gt;ביטול&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-dismiss=&quot;modal&quot;&gt;אישור&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+  </main>
+  <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>

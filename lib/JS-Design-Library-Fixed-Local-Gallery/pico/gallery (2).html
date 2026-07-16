@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pico CSS - גלריה</title>
+  <link rel="stylesheet" href="../libs/pico/pico.min.css">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Pico CSS - גלריית רכיבים</h1>
+    <p>דף זה תוקן: חלון הדיאלוג לא נפתח לבד ולא חוסם את ההמשך.</p>
+  </header>
+  <nav class="site-nav">
+    <a href="../index.html">ראשי</a>
+    <a href="#buttons">כפתורים</a>
+    <a href="#cards">כרטיסים</a>
+    <a href="#grid">גריד</a>
+    <a href="#form">טופס</a>
+    <a href="#login">התחברות</a>
+    <a href="#nav">ניווט</a>
+    <a href="#table">טבלה</a>
+    <a href="#details">פתיחה/סגירה</a>
+    <a href="#dialog">Dialog</a>
+    <a href="#empty">מצב ריק</a>
+  </nav>
+
+  <main>
+    <section class="panel">
+      <div class="note">
+        Pico מתאים במיוחד כשלא רוצים הרבה מחלקות. רוב העיצוב מגיע מאלמנטים רגילים כמו button, form, table, article.
+      </div>
+    </section>
+
+    <section class="panel" id="buttons">
+      <h2>כפתורים</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <button class="demo-button">כפתור רגיל</button>
+          <button class="secondary demo-button secondary">משני</button>
+          <button class="contrast demo-button danger">מודגש</button>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#pico-buttons">העתק קוד</button>
+      <pre id="pico-buttons"><code>&lt;button&gt;כפתור רגיל&lt;/button&gt;
+&lt;button class=&quot;secondary&quot;&gt;משני&lt;/button&gt;
+&lt;button class=&quot;contrast&quot;&gt;מודגש&lt;/button&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="cards">
+      <h2>Article Card</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <article class="demo-card">
+            <h3>שם פריט</h3>
+            <p>תיאור קצר של הפריט.</p>
+            <button class="demo-button">צפייה</button>
+          </article>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#pico-card">העתק קוד</button>
+      <pre id="pico-card"><code>&lt;article&gt;
+  &lt;h3&gt;שם פריט&lt;/h3&gt;
+  &lt;p&gt;תיאור קצר של הפריט.&lt;/p&gt;
+  &lt;button&gt;צפייה&lt;/button&gt;
+&lt;/article&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="grid">
+      <h2>Grid כרטיסים</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <div class="grid">
+            <article class="demo-card">כרטיס 1</article>
+            <article class="demo-card">כרטיס 2</article>
+            <article class="demo-card">כרטיס 3</article>
+          </div>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#pico-grid">העתק קוד</button>
+      <pre id="pico-grid"><code>&lt;div class=&quot;grid&quot;&gt;
+  &lt;article&gt;כרטיס 1&lt;/article&gt;
+  &lt;article&gt;כרטיס 2&lt;/article&gt;
+  &lt;article&gt;כרטיס 3&lt;/article&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="form">
+      <h2>טופס</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <form>
+            <label>שם מלא <input type="text" placeholder="הכניסי שם"></label>
+            <label>קטגוריה <select><option>רגיל</option><option>מיוחד</option></select></label>
+            <button type="button" class="demo-button success">שמירה</button>
+          </form>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#pico-form">העתק קוד</button>
+      <pre id="pico-form"><code>&lt;form&gt;
+  &lt;label&gt;
+    שם מלא
+    &lt;input type=&quot;text&quot; placeholder=&quot;הכניסי שם&quot;&gt;
+  &lt;/label&gt;
+
+  &lt;label&gt;
+    קטגוריה
+    &lt;select&gt;
+      &lt;option&gt;רגיל&lt;/option&gt;
+      &lt;option&gt;מיוחד&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/label&gt;
+
+  &lt;button type=&quot;submit&quot;&gt;שמירה&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="login">
+      <h2>מסך התחברות</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <article class="demo-card" style="max-width: 360px;">
+            <h3>כניסה למערכת</h3>
+            <input placeholder="שם משתמש">
+            <input type="password" placeholder="סיסמה">
+            <button class="demo-button">כניסה</button>
+          </article>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#pico-login">העתק קוד</button>
+      <pre id="pico-login"><code>&lt;article style=&quot;max-width: 360px;&quot;&gt;
+  &lt;h3&gt;כניסה למערכת&lt;/h3&gt;
+  &lt;input placeholder=&quot;שם משתמש&quot;&gt;
+  &lt;input type=&quot;password&quot; placeholder=&quot;סיסמה&quot;&gt;
+  &lt;button&gt;כניסה&lt;/button&gt;
+&lt;/article&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="nav">
+      <h2>ניווט</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <nav>
+            <ul><li><strong>שם האתר</strong></li></ul>
+            <ul><li><a href="#">בית</a></li><li><a href="#">מוצרים</a></li><li><a href="#">משתמשים</a></li></ul>
+          </nav>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#pico-nav">העתק קוד</button>
+      <pre id="pico-nav"><code>&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;שם האתר&lt;/strong&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;בית&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;מוצרים&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;משתמשים&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="table">
+      <h2>טבלה</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <table>
+            <thead><tr><th>שם</th><th>סטטוס</th><th>פעולה</th></tr></thead>
+            <tbody><tr><td>פריט 1</td><td>פעיל</td><td><button class="demo-button">עריכה</button></td></tr></tbody>
+          </table>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#pico-table">העתק קוד</button>
+      <pre id="pico-table"><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;שם&lt;/th&gt;
+      &lt;th&gt;סטטוס&lt;/th&gt;
+      &lt;th&gt;פעולה&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;פריט 1&lt;/td&gt;
+      &lt;td&gt;פעיל&lt;/td&gt;
+      &lt;td&gt;&lt;button&gt;עריכה&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="details">
+      <h2>פתיחה וסגירה בלי JavaScript</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <details>
+            <summary>לחצי להצגת פרטים</summary>
+            <p>כאן מופיע מידע נוסף.</p>
+          </details>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#pico-details">העתק קוד</button>
+      <pre id="pico-details"><code>&lt;details&gt;
+  &lt;summary&gt;לחצי להצגת פרטים&lt;/summary&gt;
+  &lt;p&gt;כאן מופיע מידע נוסף.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="dialog">
+      <h2>Dialog מתוקן</h2>
+      <p>החלון נפתח רק בלחיצה ונסגר בלחיצה על אישור או ביטול.</p>
+      <div class="grid">
+        <div class="component-preview">
+          <button class="demo-button" data-open-dialog="#picoDialogExample">פתיחת חלון</button>
+
+          <dialog id="picoDialogExample" class="local-dialog">
+            <article>
+              <h3>אישור פעולה</h3>
+              <p>האם להמשיך?</p>
+              <footer>
+                <button class="demo-button secondary" type="button" data-close-dialog>ביטול</button>
+                <button class="demo-button" type="button" data-close-dialog>אישור</button>
+              </footer>
+            </article>
+          </dialog>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#pico-dialog">העתק קוד</button>
+      <pre id="pico-dialog"><code>&lt;button data-open-dialog=&quot;#myDialog&quot;&gt;פתיחת חלון&lt;/button&gt;
+
+&lt;dialog id=&quot;myDialog&quot;&gt;
+  &lt;article&gt;
+    &lt;h3&gt;אישור פעולה&lt;/h3&gt;
+    &lt;p&gt;האם להמשיך?&lt;/p&gt;
+    &lt;footer&gt;
+      &lt;button type=&quot;button&quot; data-close-dialog&gt;ביטול&lt;/button&gt;
+      &lt;button type=&quot;button&quot; data-close-dialog&gt;אישור&lt;/button&gt;
+    &lt;/footer&gt;
+  &lt;/article&gt;
+&lt;/dialog&gt;
+
+&lt;script&gt;
+document.addEventListener(&quot;click&quot;, (event) =&gt; {
+  const openButton = event.target.closest(&quot;[data-open-dialog]&quot;);
+  if (openButton) {
+    document.querySelector(openButton.dataset.openDialog).showModal();
+  }
+
+  const closeButton = event.target.closest(&quot;[data-close-dialog]&quot;);
+  if (closeButton) {
+    closeButton.closest(&quot;dialog&quot;).close();
+  }
+});
+&lt;/script&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+
+    <section class="panel" id="empty">
+      <h2>מצב ריק</h2>
+      <div class="grid">
+        <div class="component-preview">
+          <article class="demo-card" style="text-align:center;">
+            <h3>אין נתונים להצגה</h3>
+            <p>אפשר להוסיף פריט ראשון כדי להתחיל.</p>
+            <button class="demo-button">הוספת פריט</button>
+          </article>
+        </div>
+
+    <div class="codebox">
+      <button class="copy-btn" data-copy="#pico-empty">העתק קוד</button>
+      <pre id="pico-empty"><code>&lt;article style=&quot;text-align:center;&quot;&gt;
+  &lt;h3&gt;אין נתונים להצגה&lt;/h3&gt;
+  &lt;p&gt;אפשר להוסיף פריט ראשון כדי להתחיל.&lt;/p&gt;
+  &lt;button&gt;הוספת פריט&lt;/button&gt;
+&lt;/article&gt;</code></pre>
+    </div>
+
+      </div>
+    </section>
+  </main>
+  <script src="../assets/site.js"></script>
+</body>
+</html>

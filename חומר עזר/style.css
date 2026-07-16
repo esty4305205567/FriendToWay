@@ -1,0 +1,157 @@
+/* הגדרת משתני הצבעים שביקשת */
+:root {
+    --primary-blue: #0c2340;    /* כחול כהה */
+    --accent-coral: #f28f79;    /* קורל/אפרסק */
+    --bg-pearl: #faf9f6;        /* לבן-פנינה */
+    --text-gray: #2d3748;       /* אפור פחם */
+    --white: #ffffff;
+}
+
+/* עיצוב בסיסי */
+body {
+    background-color: var(--bg-pearl);
+    color: var(--text-gray);
+    font-family: 'Heebo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* אזור פרטי המשתמש (תקציר עליון) */
+.user-summary {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 15px rgba(12, 35, 64, 0.05);
+    margin-bottom: 30px;
+    border-right: 5px solid var(--primary-blue);
+}
+
+.user-avatar i {
+    font-size: 4rem;
+    color: var(--primary-blue);
+}
+
+.user-details h1 {
+    margin: 0 0 5px 0;
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+}
+
+.user-details p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* רשת הכרטיסיות (Grid) */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* עיצוב כרטיסיה */
+.card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(12, 35, 64, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(12, 35, 64, 0.1);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #edf2f7;
+    padding-bottom: 15px;
+}
+
+.card-header i {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--primary-blue);
+}
+
+.card-content {
+    flex-grow: 1;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* כפתורים וקישורים */
+.btn {
+    display: block;
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: auto;
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: #071526;
+}
+
+.btn-accent {
+    background-color: var(--accent-coral);
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+.btn-accent:hover {
+    background-color: #e07760;
+}
+
+/* התאמות ספציפיות לכרטיסיות */
+.card.book-ride {
+    border: 2px solid var(--accent-coral);
+}
+
+.card.book-ride .card-header i {
+    color: var(--accent-coral);
+}
+
+.badge {
+    background-color: var(--accent-coral);
+    color: var(--white);
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+/* הסתרת ה-Header מאחר וציינת שהוא כבר קיים */
+header {
+    display: none; 
+}

@@ -1,0 +1,172 @@
+
+:root {
+    --primary-color: #0c2340;
+    --accent-color: #f28f79;
+    --text-color: #2d3748;
+    --bg-color: #faf9f6;
+}
+input, select, .hospital,textarea {
+    border: 2px solid rgba(242, 143, 121, 0.3) !important; 
+}
+
+input:hover, .hospital:hover,textarea:hover {
+    border-color: var(--accent-color) !important;
+}body, input, label, h5,select,textarea {
+    color: #0c2340 !important; 
+}
+
+label {
+    font-weight: 800 !important; 
+    letter-spacing: 0.5px;
+}main {
+    box-shadow: 0 20px 40px rgba(12, 35, 64, 0.15) !important;
+    border: 1px solid #e2e8f0 !important;
+}
+main {
+    max-width: 800px;
+    
+    padding: 50px;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(12, 35, 64, 0.05);
+    border: 1px solid rgba(12, 35, 64, 0.04);
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+input[type="text"], 
+input[type="number"], 
+input[type="datetime-local"], 
+select,textarea {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    border: 2px solid #e2e8f0 !important;
+    border-radius: 50px !important;
+    padding: 16px 24px !important;
+    font-size: 16px !important;
+    margin: 10px 0 20px 0 !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+input:focus, select:focus,textarea:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 4px rgba(12, 35, 64, 0.08) !important;
+    outline: none !important;
+    transform: scale(1.01);
+}
+
+label {
+    display: block !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: var(--primary-color) !important;
+    margin-bottom: 5px !important;
+    margin-top: 20px !important;
+    text-align: right !important;
+}
+
+#hospitals {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 12px;
+    margin: 20px 0 30px 0;
+}
+
+.hospital, #other {
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    padding: 12px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.hospital:hover, #other:hover {
+    background: #ffffff;
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(12, 35, 64, 0.1);
+}
+
+.hospital h5, #other h5 {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+#searchDriver {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(12, 35, 64, 0.15);
+    transition: all 0.3s ease !important;
+    margin-top: 30px;
+}
+
+#searchDriver:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(242, 143, 121, 0.3);
+}
+
+#searchDriver:active {
+    transform: translateY(0);
+}
+main {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 25px 50px -12px rgba(12, 35, 64, 0.25) !important;
+}
+label {
+    color: var(--accent-color) !important; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px !important;
+}
+
+input, select ,textarea{
+    border: 2px solid rgba(242, 143, 121, 0.2) !important;
+}
+.hospital, #other {
+    background: linear-gradient(145deg, #ffffff, #f0f4f8);
+    border: none !important;
+    box-shadow: 5px 5px 10px #d1d9e6, -5px -5px 10px #ffffff; 
+}
+
+.hospital:hover {
+    background: var(--accent-color) !important;
+    color: white !important;
+    transform: scale(1.05) !important;
+}
+.addH {
+    width: 80% ;
+    border-left: #0c2340 0px solid;
+    border-top: #0c2340 0px solid;
+    border-right: #0c2340 0px solid;
+    border-bottom: 1px solid #f28f79 !important;
+    background-color: rgba(255, 255, 255, 0.034) !important;
+    border-radius: 12px !important;
+    padding: 3px !important; 
+    transition: all 0.3s ease !important;
+    font-size: 12px;
+}
+.addH:focus{
+    border: 0.5 solid !important;
+     border-color: rgba(255, 222, 173, 0) !important;
+    box-shadow: 0 0 0 4px rgba(12, 35, 64, 0.08) !important;
+    outline: none !important;
+    transform: scale(1.01);
+
+}

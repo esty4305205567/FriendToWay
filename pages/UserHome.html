@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דף הבית - אזור אישי</title>
+
+
+    <link rel="stylesheet" href="../lib/fontawesome/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../style/main (2).css">
+
+    <link rel="stylesheet" href="../style/UserHome.css">
+        <link rel="stylesheet" href="../style/popup.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="up-header">
+            <div>
+                <img class="logo" src="../img/Untitled-1.png" alt="logo">
+            </div>
+            <p id="title">תמיד איתך בכל דרך :)</p>
+            <div id="icons">
+                <div class="col1">
+                    <div class="colIcon">
+                        <img class="sign" src="../gif/system-regular-47-chat.gif" alt="">
+                    </div>
+                    <a href="../home.html#contact">צור קשר</a>
+                </div>
+                <div class="col1">
+                    <div class="colIcon">
+                        <i class="fa-solid fa-link"></i>
+
+                    </div>
+                    <a>שתף</a>
+                </div>
+
+                <div class="col1">
+                    <div class="colIcon">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                    <a id="out">התנתק</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav>
+            <div class="col2">
+                <i class="fa-solid fa-home"></i>
+                <a class="links-home" id="homePage" href="../home.html">דף הבית</a>
+            </div>
+
+            <div class="col2">
+                <i class="fa-solid fa-comment-dots"></i>
+                <a class="links-home" href="../home.html#services-grid">אודות</a>
+            </div>
+            <div class="col2">
+                <i class="fa-solid fa-question-circle"></i>
+                <a class="links-home" href="../home.html#questions">שאלות נפוצות</a>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="dashboard-container">
+
+            <section class="user-summary">
+                <div class="user-avatar">
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
+                <div class="user-details">
+                    <h1 id="hello_to">שלום, ישראל ישראלי</h1>
+
+                    <i class="fa-solid fa-phone" ></i>
+                    <p id="phonetext" class="detpm">050-1234567 </p> 
+                    <p class="detpm"> | </p>
+                    <i class="fa-solid fa-envelope" ></i>
+                    <p id="mailtext" class="detpm"> israel@example.com</p>
+                </div>
+            </section>
+
+            <div class="cards-grid">
+
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-house"></i>
+                        <h2>דף הבית</h2>
+                    </div>
+                    <div class="card-content">
+                        ברוך הבא ללוח הבקרה האישי שלך. כאן תוכל לנהל את הנסיעות, לעדכן פרטים ולצפות בהודעות אחרונות.
+                    </div>
+
+                    <a href="./UserHome.html" class="btn btn-primary"><i class="fa-solid fa-sync"></i> רענון הנתונים</a>
+                </div>
+
+                <div class="card book-ride">
+                    <div class="card-header">
+                        <i class="fa-solid fa-taxi"></i>
+                        <h2>הזמנת נסיעה חדשה</h2>
+                    </div>
+                    <div class="card-content">
+                        זקוק להסעה? תאם את הנסיעה הבאה שלך בקלות ובמהירות למגוון יעדים.
+                    </div>
+                    <a href="./askDriver (2).html" class="btn btn-primary"><i class="fa-solid fa-plus"></i> הזמן נסיעה
+                        עכשיו</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-route"></i>
+                        <h2>הנסיעות שלי</h2>
+                    </div>
+                    <div class="card-content">
+                        <p class="strong">נסיעה קרובה:</p>
+                        <p id="closetr" >מס' הזמנה: #87492</p>
+                    </div>
+                    <a href="./myTravelers (2).html" class="btn btn-primary">לכל הנסיעות</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-bell"></i>
+                        <h2>הודעות ועדכונים</h2>
+                        <span class="badge">2 חדשות</span>
+                    </div>
+                    <div class="card-content">
+                        <ul >
+                            <li>אישור הזמנה נסיעה #87492</li>
+                            <li>עדכון שעות פעילות לחג</li>
+                        </ul>
+                    </div>
+                    <a href="./messages_refined.html" class="btn btn-primary">לתיבת ההודעות</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-user-pen"></i>
+                        <h2>עדכון פרטים</h2>
+                    </div>
+                    <div class="card-content">
+                        שמור על הפרטים שלך מעודכנים כדי שנוכל לספק לך את השירות הטוב ביותר וליצור איתך קשר.
+                    </div>
+                    <a href="./updateDetails (2).html" class="btn btn-primary">ערוך אזור אישי</a>
+                </div>
+
+                <div class="card logout-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <h2>התנתקות</h2>
+                    </div>
+                    <div class="card-content">
+                        סיימת את הפעילות במערכת? מומלץ להתנתק בצורה מסודרת כדי לשמור על אבטחת החשבון שלך.
+                    </div>
+                    <button href="#" id="logout-card" class="btn btn-danger">יציאה בטוחה</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="../scripts/data (2).js"></script>
+    <script src="../scripts/ls (2).js"></script>
+        <script src="../scripts/js.js"></script>
+
+    <script src="../scripts/UserHOme.js"></script>
+</body>
+
+</html>

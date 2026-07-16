@@ -1,0 +1,120 @@
+:root {
+    --primary-blue: #0c2340;
+    --accent-coral: #f28f79;
+    --bg-pearl: #faf9f6;
+}
+
+body {
+    background: var(--bg-pearl);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#updateDetails {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 50px;
+    border-radius: 40px;
+    /* צל קל מאוד שנותן תחושת עומק בלי להכביד */
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* כותרת מינימליסטית */
+#updateDetails::before {
+    content: "פרטים אישיים";
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    margin-bottom: 40px;
+    border-right: 4px solid var(--accent-coral); /* הדגשת קורל קטנה */
+    padding-right: 15px;
+}
+
+/* שדות קלט בסגנון "Floating Label" */
+.col {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #edf2f7;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--accent-coral);
+    outline: none;
+}
+
+/* הלייבל הופך למרכזי */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: var(--primary-blue);
+    font-size: 0.85rem;
+}
+
+/* הכפתור הראשי בצבע קורל מלא - זו החמימות שחסרה */
+.finish {
+    width: 100%;
+    background: var(--accent-coral);
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(242, 143, 121, 0.3);
+}
+
+.finish:hover {
+    background: #e07a65;
+}
+.support-btn {
+    position: fixed;
+    bottom: 80px;
+    left: 30px;
+    background: var(--primary-blue);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    box-shadow: 0 10px 25px rgba(12, 35, 64, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.support-btn:hover {
+    transform: scale(1.05);
+    background: var(--accent-coral);
+}
+/* אפקט הילה לשדות הקלט */
+input:focus {
+    outline: none;
+    border-bottom-color: var(--accent-coral);
+    /* הוספת צל קל שנותן תחושת עומק טכנולוגית */
+    box-shadow: 0 4px 6px -1px rgba(242, 143, 121, 0.1);
+}
+
+/* אנימציה עדינה לכרטיס כשהוא נטען */
+#updateDetails {
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דף הבית - אזור אישי</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../lib/fontawesome/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="./UserHome.css">
+</head>
+
+<body>
+    <header>
+        <div id="up-header">
+            <div>
+                <img class="logo" src="../img/Untitled-1.png" alt="logo">
+            </div>
+            <p id="title">תמיד איתך בכל דרך :)</p>
+            <div id="icons">
+                <div class="col1">
+                    <div class="colIcon">
+                        <img class="sign" src="../gif/system-regular-47-chat.gif" alt="">
+                    </div>
+                    <a href="../home.html#contact">צור קשר</a>
+                </div>
+                <div class="col1">
+                    <div class="colIcon">
+                        <i class="fa-solid fa-link"></i>
+
+                    </div>
+                    <a>שתף</a>
+                </div>
+
+
+                <div class="col1">
+                    <div class="colIcon">
+
+
+                        <img class="sign" src="../gif/system-regular-161-trending-flat.gif" alt="">
+
+                    </div>
+                    <a href="../pages/sign-in.html">הרשמה</a>
+                </div>
+                <div class="col1">
+                    <div class="colIcon">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                    <a id="out">התנתק</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav>
+            <div class="col2">
+                <i class="fa-solid fa-home"></i>
+                <a class="links-home" id="homePage" href="./home-in.html">דף הבית</a>
+            </div>
+
+            <div class="col2">
+                <i class="fa-solid fa-comment-dots"></i>
+                <a class="links-home" href="#services-grid">אודות</a>
+            </div>
+            <div class="col2">
+                <i class="fa-solid fa-question-circle"></i>
+                <a class="links-home" href="#questions">שאלות נפוצות</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+
+        <section class="user-summary">
+            <div class="user-avatar">
+                <i class="fa-solid fa-circle-user"></i>
+            </div>
+            <div class="user-details">
+                <h1>שלום, ישראל ישראלי</h1>
+                <p>
+                    <i class="fa-solid fa-envelope" style="color: var(--accent-coral);"></i> israel@example.com | <i
+                        class="fa-solid fa-phone" style="color: var(--accent-coral);"></i> 050-1234567
+                </p>
+            </div>
+        </section>
+
+        <div class="cards-grid">
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-house"></i>
+                    <h2>דף הבית</h2>
+                </div>
+                <div class="card-content">
+                    ברוך הבא ללוח הבקרה האישי שלך. כאן תוכל לנהל את הנסיעות, לעדכן פרטים ולצפות בהודעות אחרונות.
+                </div>
+                <a href="#" class="btn btn-primary">רענון הנתונים</a>
+            </div>
+
+            <div class="card book-ride">
+                <div class="card-header">
+                    <i class="fa-solid fa-taxi"></i>
+                    <h2>הזמנת נסיעה חדשה</h2>
+                </div>
+                <div class="card-content">
+                    זקוק להסעה? תאם את הנסיעה הבאה שלך בקלות ובמהירות למגוון יעדים.
+                </div>
+                <a href="#" class="btn btn-accent"><i class="fa-solid fa-plus"></i> הזמן נסיעה עכשיו</a>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-route"></i>
+                    <h2>הנסיעות שלי</h2>
+                </div>
+                <div class="card-content">
+                    <strong>נסיעה קרובה:</strong><br>
+                    מחר, 14:30 | ירושלים - בני ברק<br>
+                    <span style="color: #718096; font-size: 0.9em;">מס' הזמנה: #87492</span>
+                </div>
+                <a href="#" class="btn btn-primary">לכל הנסיעות</a>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-bell"></i>
+                    <h2>הודעות ועדכונים</h2>
+                    <span class="badge">2 חדשות</span>
+                </div>
+                <div class="card-content">
+                    <ul style="padding-right: 20px; margin: 0;">
+                        <li>אישור הזמנה נסיעה #87492</li>
+                        <li>עדכון שעות פעילות לחג</li>
+                    </ul>
+                </div>
+                <a href="#" class="btn btn-primary">לתיבת ההודעות</a>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-user-pen"></i>
+                    <h2>עדכון פרטים</h2>
+                </div>
+                <div class="card-content">
+                    שמור על הפרטים שלך מעודכנים כדי שנוכל לספק לך את השירות הטוב ביותר וליצור איתך קשר.
+                </div>
+                <a href="#" class="btn btn-primary">ערוך אזור אישי</a>
+            </div>
+
+            <div class="card logout-card">
+                <div class="card-header">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <h2>התנתקות</h2>
+                </div>
+                <div class="card-content">
+                    סיימת את הפעילות במערכת? מומלץ להתנתק בצורה מסודרת כדי לשמור על אבטחת החשבון שלך.
+                </div>
+                <a href="#" class="btn btn-danger">יציאה בטוחה</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
