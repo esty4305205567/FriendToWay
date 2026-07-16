@@ -6,7 +6,7 @@ logout_card.onclick = () => {
 
   alert("יצאתם מהמערכת.")
   updateCurrentUser({})
-  location.href = "../home.html"
+  location.href = "../index.html"
 }
 let hello_to = document.querySelector("#hello_to")
 const a=[]
